@@ -1,15 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace CodeFirstMigrations
 {
     class Program
     {
         static void Main(string[] args)
         {
+            using (AppContext ctx = new AppContext())
+            {
+
+                Editora ed = new Editora
+                {                
+                    Nome = "Positivo",
+                    Email = "Positivo@gmail.com"
+                };
+
+                ctx.Editoras.Add(ed);
+                ctx.SaveChanges();
+            }
         }
     }
 }

@@ -33,7 +33,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -43,11 +52,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppContext.cs" />
+    <Compile Include="Editora.cs" />
+    <Compile Include="Livro.cs" />
+    <Compile Include="Migrations\201511140233460_InitialCreate.cs" />
+    <Compile Include="Migrations\201511140233460_InitialCreate.Designer.cs">
+      <DependentUpon>201511140233460_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511140244372_AddTelefoneToEditora.cs" />
+    <Compile Include="Migrations\201511140244372_AddTelefoneToEditora.Designer.cs">
+      <DependentUpon>201511140244372_AddTelefoneToEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511140251385_AddTRequiredsEditora.cs" />
+    <Compile Include="Migrations\201511140251385_AddTRequiredsEditora.Designer.cs">
+      <DependentUpon>201511140251385_AddTRequiredsEditora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511141301372_CreateLivro.cs" />
+    <Compile Include="Migrations\201511141301372_CreateLivro.Designer.cs">
+      <DependentUpon>201511141301372_CreateLivro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201511140233460_InitialCreate.resx">
+      <DependentUpon>201511140233460_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511140244372_AddTelefoneToEditora.resx">
+      <DependentUpon>201511140244372_AddTelefoneToEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511140251385_AddTRequiredsEditora.resx">
+      <DependentUpon>201511140251385_AddTRequiredsEditora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511141301372_CreateLivro.resx">
+      <DependentUpon>201511141301372_CreateLivro.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
