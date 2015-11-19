@@ -1,0 +1,31 @@
+﻿@model ICollection<CamadaDeApresentacao.Models.Aluno>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Tabela de Alunos</h2>
+
+<table>
+    <tr>
+        <th>AlunoId</th>
+        <th>Nome</th>
+        <th>Email</th>
+    </tr>
+
+    @foreach (var a in @Model)
+    {
+        <tr>
+            <th>@a.Id</th>
+            <th>@a.Nome</th>
+            <th>@a.Email</th>
+        </tr>
+    }
+
+
+
+
+
+
+</table>
+
