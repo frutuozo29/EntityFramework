@@ -2,7 +2,15 @@
 
 @{
     ViewBag.Title = "Listar";
+    Layout = "~/Views/Shared/_MeuLayout.cshtml";
 }
+
+@section Toolbar{
+    <input type="search" value="Digite o Nome do Aluno" />
+    <input type="button" value="Buscar"/>
+}
+
+
 
 <h2>Tabela de Alunos</h2>
 
