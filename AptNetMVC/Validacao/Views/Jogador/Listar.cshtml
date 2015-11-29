@@ -1,0 +1,27 @@
+﻿@using Validacao.Models
+@model IEnumerable<Jogador>
+
+@{
+    ViewBag.Title = "Listar";
+}
+
+<h2>Listar</h2>
+
+<table>
+
+    <tr>
+        <td>@Html.DisplayNameFor(m => m.Nome)</td>
+        <td>@Html.DisplayNameFor(m => m.Altura)</td>
+        <td>@Html.DisplayNameFor(m => m.Numero)</td>
+    </tr>
+
+    @foreach (var jogador in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(m => jogador.Nome)</td>
+            <td>@Html.DisplayFor(m => jogador.Altura)</td>
+            <td>@Html.DisplayFor(m => jogador.Numero)</td>
+        </tr>
+    }
+
+</table>
