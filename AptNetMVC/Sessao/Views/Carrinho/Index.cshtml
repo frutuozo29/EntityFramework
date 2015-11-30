@@ -1,0 +1,18 @@
+﻿@model Sessao.Models.Carrinho
+
+@{
+    ViewBag.Title = "Itens do carrinho";
+}
+
+<h2>Itens do Carrinho</h2>
+<ul>
+    @{
+        int i = 0;
+        foreach (var produto in Model.Produtos)
+        {
+            <li>@produto.Nome (@produto.Preco) - @Html.ActionLink("Remover do carrinho", "Remover", new { id = i++ })</li>
+        }
+    }
+</ul>
+
+@Html.ActionLink("Cancelar carrinho", "Cancelar")
