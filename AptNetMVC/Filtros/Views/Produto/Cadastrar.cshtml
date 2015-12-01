@@ -1,0 +1,43 @@
+﻿@model Filtros.Models.Produto
+
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+
+    <fieldset>
+        <legend>Produtos</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Preco)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Preco)
+            @Html.ValidationMessageFor(model => model.Preco)
+        </div>
+
+        <p>
+            <input type="submit" value="Cadastrar"/>
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Retornar para Lista", "Index")
+</div>
+
+<script src="~/bundles/jqueryval" ></script>
