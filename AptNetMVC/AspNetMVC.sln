@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sessao", "Sessao\Sessao.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filtros", "Filtros\Filtros.csproj", "{629F0D21-5510-43A8-A5C8-144ECCF3A8DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TratamentoDeErros", "TratamentoDeErros\TratamentoDeErros.csproj", "{18536ACC-636A-49D3-98B7-56F6409AFB83}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{629F0D21-5510-43A8-A5C8-144ECCF3A8DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{629F0D21-5510-43A8-A5C8-144ECCF3A8DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{629F0D21-5510-43A8-A5C8-144ECCF3A8DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
