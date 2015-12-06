@@ -1,0 +1,43 @@
+﻿@model WebAPI.Models.Curso
+@{
+    ViewBag.Title = "Cadastrar";
+}
+
+<h2>Cadastrar</h2>
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { @action = "/api/cursos"}))
+{
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Curso</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Sigla)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Sigla)
+            @Html.ValidationMessageFor(model => model.Sigla)
+        </div>
+
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Nome)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Nome)
+            @Html.ValidationMessageFor(model => model.Nome)
+        </div>
+
+        <p>
+            <input type="submit" value="Salvar"/>
+        </p>
+
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Voltar a lista", "Index")
+</div>
+
+<script src="~/bundles/jqueryval"></script>

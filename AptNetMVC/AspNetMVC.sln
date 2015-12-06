@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filtros", "Filtros\Filtros.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TratamentoDeErros", "TratamentoDeErros\TratamentoDeErros.csproj", "{18536ACC-636A-49D3-98B7-56F6409AFB83}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{4E6EF1E0-A49B-4F9F-9814-70B333ED46A9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{18536ACC-636A-49D3-98B7-56F6409AFB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E6EF1E0-A49B-4F9F-9814-70B333ED46A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E6EF1E0-A49B-4F9F-9814-70B333ED46A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E6EF1E0-A49B-4F9F-9814-70B333ED46A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E6EF1E0-A49B-4F9F-9814-70B333ED46A9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
